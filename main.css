@@ -1,0 +1,116 @@
+html  {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+  	padding: 1rem;
+  	font-size: 1.15em;
+}
+
+.t1, .t2 {
+	position: fixed;
+	z-index: 100;
+	width: 17.5rem;
+	color: blue;
+}
+
+.buttons {
+	top: 8rem;
+	position: fixed;
+	z-index: 100;
+}
+
+#invert-button, #print-button {
+	box-shadow: 2px 4px 4px;
+}
+
+
+.container {
+	display: flex;
+	gap: 2rem;
+	/*justify-content: space-between;*/
+}
+
+.matter-container {
+	width: 17.5rem;
+}
+
+.text-container {
+	text-align: justify;
+	width: 35rem;
+	text-justify: inter-word;
+	overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+
+/*CLASSLISTS*/
+
+.blank {
+	background: white;
+}
+
+.filled {
+	background: black;
+}
+
+.present {
+	cursor: pointer;
+	color: blue;
+}
+
+.present:hover {
+	text-decoration: underline;
+}
+
+.remove {
+	visibility: hidden;
+}
+
+.show {
+	/*font-family: sans-serif;*/
+	visibility: visible;
+	color: #FFE500;
+	filter: blur(0.5px);
+	-webkit-animation: blur 7s ease-in-out infinite alternate;
+    animation: blur 7s ease-in-out infinite alternate;
+}
+
+
+@keyframes blur {
+    100% {filter: blur(3px);}
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.mc-vis {
+	visibility: hidden;
+}
+
+.footnotes-side span.fn {
+        top: 0;
+    }
+
+.footnotes-side {
+    position: absolute;
+    top: 0px;
+    width: 10rem;
+    font-size: 0.75em;
+    color: blue;
+}
+
+    
+.footnotes-side p.fn {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+}
