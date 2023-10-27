@@ -6,34 +6,52 @@ html  {
   	user-select: none;
   	padding: 1rem;
   	font-size: 1.15em;
+  	font-weight: bold;
+  	color: blue;
+  }
+
+  a:visited, a, a:active {
+  	color: blue;
+  	text-decoration: none;
+  }
+
+  a:hover {
+  	text-decoration: underline;
+  }
+
+.t1 {
+	width: 15rem;
+	scroll-snap-align: start;
 }
 
-.t1, .t2 {
-	position: fixed;
-	z-index: 100;
-	width: 17.5rem;
-	color: blue;
-}
-
-.buttons {
-	top: 8rem;
-	position: fixed;
-	z-index: 100;
-}
-
-#invert-button, #print-button {
-	box-shadow: 2px 4px 4px;
+.red {
+	color: red;
 }
 
 
 .container {
 	display: flex;
-	gap: 2rem;
-	/*justify-content: space-between;*/
 }
 
-.matter-container {
+.matter-container1 {
+	font-weight: bold;
+	height: 91vh;
 	width: 17.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.matter-container1::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+.t2 {
+		font-weight: bold;
+
 }
 
 .text-container {
@@ -50,67 +68,37 @@ html  {
     hyphens: auto;
 }
 
-
-/*CLASSLISTS*/
-
-.blank {
-	background: white;
+form {
+	text-align: center;
 }
 
-.filled {
-	background: black;
+@media only screen and (max-width: 935px) {
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
-.present {
-	cursor: pointer;
-	color: blue;
+.matter-container1 {
+	width: 90vw;
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	overflow-y: scroll;
 }
 
-.present:hover {
-	text-decoration: underline;
+.t1 {
+	width: 90%;
 }
 
-.remove {
-	visibility: hidden;
+.text-container {
+	text-align: left;
+	width: 100%;
 }
 
-.show {
-	/*font-family: sans-serif;*/
-	visibility: visible;
-	color: #FFE500;
-	filter: blur(0.5px);
-	-webkit-animation: blur 7s ease-in-out infinite alternate;
-    animation: blur 7s ease-in-out infinite alternate;
 }
 
 
-@keyframes blur {
-    100% {filter: blur(3px);}
-}
 
-.hide {
-	visibility: hidden;
-}
 
-.mc-vis {
-	visibility: hidden;
-}
 
-.footnotes-side span.fn {
-        top: 0;
-    }
-
-.footnotes-side {
-    position: absolute;
-    top: 0px;
-    width: 10rem;
-    font-size: 0.75em;
-    color: blue;
-}
-
-    
-.footnotes-side p.fn {
-        position: absolute;
-        padding: 0;
-        margin: 0;
-}

@@ -11,6 +11,10 @@ for (let i = 0; i < strings.length; i++) {
     });
 }  
 
+let backButton = document.getElementById('back-button'); 
+function back(){
+    window.location='../index.html';
+}
 
 let tc = document.querySelector('.text-container')
 function invert() {
@@ -35,7 +39,7 @@ invertButton.addEventListener('click', invert);
 let t1 = document.querySelector('.t1');
 let printButton = document.getElementById('print-button');
 printButton.addEventListener('click', function() {
-	invertButton.style.visibility = 'hidden';
+	invertButton.style.visibility = 'hidden';    
     backButton.style.visibility = 'hidden';
     this.style.visibility = 'hidden';
     tc.style.textAlign = 'left';
@@ -45,27 +49,10 @@ printButton.addEventListener('click', function() {
     this.style.visibility = 'visible';
 });
 
-
-$(function() {
-    $('#footnotes').addClass('footnotes-side');
-    setTimeout(function(){
-    let minTop = 0;
-    $('p.fn').each( function() {
-        let anchor = this.id;
-        let fnAnchor = $('a[href=#'+anchor+']');
-        let top = fnAnchor.position().top;
-        fnAnchor.replaceWith(function(){ return '<span class="fn">'+$(this).text()+'</span>' });
-        top = Math.max(top, minTop);
-        let fnHeight = $(this).css('top', top).height();
-        minTop = top+fnHeight;
-    });
-},64);
-});
-
 window.onresize = function(){ location.reload(); }
 
 // let message = [
-// 'Without', 'Withou',
+// 'WHAT IS A THEORIST', 'ROGOF',
 // 'Witho', 'With', 'Wit', 'Wi', 'W', 'w', '.']
 // i = 0
 // function animateTitle() {
