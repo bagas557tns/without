@@ -1,0 +1,104 @@
+html  {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+  	padding: 1rem;
+  	font-size: 1.15em;
+  	font-weight: bold;
+  	color: blue;
+  }
+
+  a:visited, a, a:active {
+  	color: blue;
+  	text-decoration: none;
+  }
+
+  a:hover {
+  	text-decoration: underline;
+  }
+
+.t1 {
+	width: 15rem;
+	scroll-snap-align: start;
+}
+
+.red {
+	color: red;
+}
+
+
+.container {
+	display: flex;
+}
+
+.matter-container1 {
+	font-weight: bold;
+	height: 91vh;
+	width: 17.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.matter-container1::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+.t2 {
+		font-weight: bold;
+
+}
+
+.text-container {
+	text-align: justify;
+	width: 35rem;
+	text-justify: inter-word;
+	overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+form {
+	text-align: center;
+}
+
+@media only screen and (max-width: 935px) {
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.matter-container1 {
+	width: 90vw;
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	overflow-y: scroll;
+}
+
+.t1 {
+	width: 90%;
+}
+
+.text-container {
+	text-align: left;
+	width: 100%;
+}
+
+}
+
+
+
+
+

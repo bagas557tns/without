@@ -11,19 +11,6 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-let strings = document.querySelectorAll('span'); 
-let string = [];
-let look = ["visible", "hidden"]
-
-for (let i = 0; i < strings.length; i++) { 
-    strings[i].setAttribute('id', 'string' + i);
-    string[i] = document.getElementById('string' + i);
-    string[i].addEventListener('click', () => {
-    string[i].classList.add('subtract');
-    });
-} 
-
-
 
 let buttons = document.getElementById('buttons');
 let printButton = document.getElementById('print-button');

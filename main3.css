@@ -22,10 +22,8 @@ html  {
   padding: 1rem;
   font-size: 1vw;
   font-family: Neue Haas Unica Pro;
- /* font-family: serif;
-   font-size: 1.15vw;*/
 	filter: blur(0.35px);
-  -webkit-text-stroke: 0.325px;
+	-webkit-text-stroke: 0.325px;
   -moz-text-stroke: 0.325px;
   text-stroke: 0.325px;
   /*background: #eee684;*/
@@ -63,29 +61,27 @@ html  {
 	text-align: justify;
 	width: auto;
 	height: 62.5vh;
-  /*animation: increaseLetterSpacing 8000s linear forwards;*/
+	transition: 0.125s;
+  animation: increaseLetterSpacing 5500s linear forwards;
+}
+
+.text-container:hover {
+	opacity: 0.2;
+	filter: blur(0.75px);
 }
 
 button {
 	font-size: 0.75vw;
 }
 
-.b1 {
+.b3 {
 	color: grey;
 }
 
-.b2, .b3, .b4, .b5 {
+.b1, .b2, .b4, .b5 {
 	box-shadow: 2px 2px 2.25px darkgrey;
 }
 
-span {
-	transition: 0.125s;
-}
-
-span:hover {
-	opacity: 0.2;
-	filter: blur(0.75px);
-}
 
 .subtract {
 	visibility: hidden;

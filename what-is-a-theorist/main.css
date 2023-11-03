@@ -1,9 +1,9 @@
 html  {
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-user-select: none;
+/*    -webkit-user-select: none;
   	-ms-user-select: none;
-  	user-select: none;
+  	user-select: none;*/
   	padding: 1rem;
   	font-size: 1.15em;
   		font-weight: bold;

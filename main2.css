@@ -22,10 +22,8 @@ html  {
   padding: 1rem;
   font-size: 1vw;
   font-family: Neue Haas Unica Pro;
- /* font-family: serif;
-   font-size: 1.15vw;*/
 	filter: blur(0.35px);
-  -webkit-text-stroke: 0.325px;
+	-webkit-text-stroke: 0.325px;
   -moz-text-stroke: 0.325px;
   text-stroke: 0.325px;
   /*background: #eee684;*/
@@ -70,11 +68,11 @@ button {
 	font-size: 0.75vw;
 }
 
-.b1 {
+.b2 {
 	color: grey;
 }
 
-.b2, .b3, .b4, .b5 {
+.b1, .b3, .b4, .b5 {
 	box-shadow: 2px 2px 2.25px darkgrey;
 }
 

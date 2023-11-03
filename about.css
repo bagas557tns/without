@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    src: url('NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+*::-webkit-scrollbar {
+	display: none;
+    width: 0 !important;
+}
+
+html  {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-family: Neue Haas Unica Pro;
+  filter: blur(0.35px);
+  -webkit-text-stroke: 0.325px;
+  -moz-text-stroke: 0.325px;
+  text-stroke: 0.325px;
+}
+
+span {
+	font-style: italic;
+}
+
+a:visited {
+	color: black;
+}
